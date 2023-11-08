@@ -2,37 +2,66 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Determine the power transmitted if dead weight on brake is 70 kg and engine has a speed of 300 rpm. One end of the rope has a diameter of 0.05 m is attached to a spring balance which has reading of 150 N, diameter of drum is 1 m.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "8.851 kW ",
+        "b": "8.851 W ",
+        "c": "1319.46 W",
+        "d": "None of these"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+     
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which parameters can be measured using a dynamometer?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Force",
+        "b": "Torque",
+        "c": "Power",
+        "d": "All of these"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "Rope brake dynamometer uses _______",
+      "answers": {
+        "a": "no lubricant",
+        "b": "oil as lubricant",
+        "c": "water as lubricant",
+        "d": "special lubricant"
       },
-      "correctAnswer": "c",
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "The following typeof dynamometer is used when it is desired to measure the large powers of the steam turbine propelling the naval ship ____",
+      "answers": {
+        "a": "torsion dynamometer",
+        "b": "electrical dynamometer",
+        "c": "epicyclic train dynmometer",
+        "d": "belt transmission dynamometer"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+	
+	{
+      "question": "The following dynamometeris used for power measurement when the speed is high and the viscous force is small _____",
+      "answers": {
+        "a": "telsa fluid friction dynamometer",
+        "b": "froude water vortex dynamometer",
+        "c": "rope brake dynamometer",
+        "d": "amsler dynamometer"
+      },
+     
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
