@@ -52,7 +52,7 @@ function testing() {
 	console.log(diameter);
 	
 	
-	var motor_Green = paper.image("images/motor.png", (x), (y + 145), 130, 120);
+	var motor_Green = paper.image("images/motor.PNG", (x), (y + 145), 130, 120);
 
 	//var switch_button = paper.image("images/flowSwitch.png", (x + 550), (y + 290), 50, 50);
 //	var minus = paper.image("images/minus.png", (x + 110), (y + 10), 30, 30);
@@ -62,7 +62,7 @@ function testing() {
 	var minus = paper.image("images/minus.png", (x + 90), (y + 450), 30, 30);
 	var plus = paper.image("images/plus.png", (x + 210), (y + 450), 30, 30);
 	var hook = paper.image("images/hook.jpg", (x + 185), (y + 30), 50, 50).rotate(180);
-	var scale = paper.image("images/roap_scale.png", (x + 140), (y- 200 ), 150, 220);
+	var scale = paper.image("images/roap_scale.PNG", (x + 140), (y- 200 ), 150, 220);
 	var arrow = paper.image("images/arrow.png", (x + 210), (y ), 50, 10);
 
 
@@ -74,9 +74,9 @@ function testing() {
 //	mag_sensor(x, y);
 	water(x+220, y+260);
 	var motor_Red = paper.image("images/motor1.png", (x + 490), (y + 410), 130, 100);
-	var wt_img = paper.image("images/weight.png", (x + 130), (y + 280), 0, 0);
+	var wt_img = paper.image("images/weight.jpg", (x + 130), (y + 280), 0, 0);
 	//var img_roap = paper.image("images/roap_break.png", (x + 120), (y-150), 420, 420).toBack();
-	var img_roap = paper.image("images/roap_drum.png", (x +130), (y+143), 150, 120);
+	var img_roap = paper.image("images/roap_drum.PNG", (x +130), (y+143), 150, 120);
 	var submit = paper.image("images/submit.png", (x +500), (y), 100, 80);
 	var toap = paper.image("images/roap_line.png", (x +205), (y+50), 10, 100);
 	var toap = paper.image("images/roap_line.png", (x +165), (y+250), 10, 100);
