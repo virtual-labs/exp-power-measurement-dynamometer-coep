@@ -1,0 +1,122 @@
+#div1 {
+  width: 600px;
+  height: 670px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+#imgb1{
+	background-image: url("images/b1.jpg");
+	 background-color: #cccccc;
+}
+ #questionDiv{}
+.QueHead{font-size: 18px;
+      font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 10px 0;
+    font-family: Cambria, Georgia, serif;
+	}
+#questionDiv .queno
+{ background-color:#5d4c65; 
+padding:5px 10px; 
+color:#fff; 
+font-size: 20px; 
+border-radius: 10px; 
+font-family: Cambria, Georgia, serif;
+}
+#questionDiv .queTitle {
+	padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#testSubmit
+{
+	padding: 10px;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #666;
+	margin: 20px 10px;;
+	letter-spacing: 1px;
+	font-weight: bold;
+/* 	box-shadow: 0 5px #999; */
+}
+
+#testSubmit:hover{
+	background-color: #2f0d3e;
+}
+
+#testSubmit:active {
+	background-color: #05aaa5;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+footer {
+	background: rgb(125,176,169);
+background: linear-gradient(90deg, rgba(125,176,169,1) 0%, rgba(78,109,114,1) 31%, rgba(33,44,62,1) 100%);
+	padding: 2px 10px;
+	border-top: 5px solid #2a333c;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.highcharts-title{
+	 font-size: 3.2em;
+}
+.highcharts-background{
+	fill:#e5e5e5;
+	fontsize:40rem;
+	color:#fff;
+	
+}
+.highcharts-title{
+	       font-size: 2.2em;
+    color:red;
+    font-weight: bold;
+    fill:red;
+}
+.highcharts-subtitle{
+	       font-size: 2.2em;
+    color: red;
+    font-weight: bold;
+    fill: red;
+}
+.highcharts-axis-title{
+
+        color: rgb(58 22 22);
+    font-size: 1.8em;
+    fill: rgb(112 37 37);
+}
+.highcharts-yaxis
+{
+	font-size: 2.0em;
+	fill:rgb(186 40 40);
+}
+.highcharts-xaxis
+{
+	font-size: 2.0em;
+	fill:rgb(186 40 40);
+}
+.highcharts-xaxis-labels
+{
+	font-size: 1.5em;
+}
+.highcharts-yaxis-labels
+{
+	font-size: 1.8em;
+}
+.highcharts-point 
+{
+	fill:red;
+}

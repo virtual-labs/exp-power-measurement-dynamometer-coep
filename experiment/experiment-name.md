@@ -1,1 +1,1 @@
-## Experiment name
+## Power Measurement using dynamometer

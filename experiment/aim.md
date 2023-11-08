@@ -1,1 +1,7 @@
-### Aim of the experiment
+### Aim 
+Power Measurement using dynamometer
+
+### Objective
+- 
+
+
