@@ -10,8 +10,8 @@ function tableCreateForFualtFinding1()
 					+ ' <thead>'
 					+ '  <tr  style="padding:10px;background-color:#1d2b37;color:#fff;">'
 //					+ '  <th>Percentage</th>'
-					+ '   <th>Magnetic Flow (Standard) (LPM)</th>'
-					+ '  <th >Rotameter Flow (Actual) (LPM)</th>'
+					+ '   <th>Calculated Torque(Standard) (Nm)</th>'
+					+ '  <th >Power (Kw)</th>'
 
 					+ '   </tr>'
 					+ '  </thead>'
@@ -21,7 +21,7 @@ function tableCreateForFualtFinding1()
 					console.log("errorRandom   "+errorRandom);
 					
 					var errorAddFault1 =parseFloat(errorRandom+masterJson.demo[i].torque_err);
-					var errorAddFault = errorAddFault1.toFixed(2);
+					var errorAddFault = 0;
 					console.log("errro"+ errorAddFault);
 					
 					tableMainDiv += '<tr>'
@@ -49,8 +49,8 @@ function tableCreateForFualtFinding1()
 					+ ' <thead>'
 					+ '  <tr  style="padding:10px;background-color:#1d2b37;color:#fff;">'
 //					+ '  <th><center>Percentage</center></th>'
-					+ '   <th><center>Magnetic Flow (Standard) (LPM)</center></th>'
-					+ '  <th><center>Rotameter Flow (Actual) (LPM)</center></th>'
+					+ '   <th><center>Calculated Torque (Standard) (Nm)</center></th>'
+					+ '  <th><center>Power (Kw)</center></th>'
 
 					+ '   </tr>'
 					+ '  </thead>'
@@ -87,10 +87,11 @@ function tableCreateForFualtFinding1()
 
 
  var randomNumber;
+ var ent = 0;
 function fualtFinding()
 {
 	
-	$("#centerText1").html("ROTAMETER DIAGRAM");
+$("#centerText1").html("SHAFT TORUE DIAGRAM");
 	 $("#centerText2").html("FUALT FINDING ");
 	$("#main-div-conf").html("");
 	 $("#canvas-div").html("");
@@ -98,8 +99,8 @@ function fualtFinding()
 	 $("#nextFaultFindingDiv").html("");
 	 $("#calibrationDiv").html("");
 	 $("#panelHeadingBold").html(""); 
-//	  randomNumber=Math.floor(Math.random() * 2);
-	 randomNumber = 0;
+//	  randomNumber=Math.round(Math.random() * 2);
+	 randomNumber = 1;
 	 console.log("random  "+randomNumber);
 	var str=''
 	str+='<div class="row ">'
@@ -110,9 +111,9 @@ function fualtFinding()
 		 +'<div class="col-sm-12">'
 		 +' <select  class="form-control col-sm-12" id="errorSelection">'
 //		 +' <option  value="0">Select Error type </option>'
-		 +' <option  value="0"> Sensor Displacement </option>'
-		 +'  <option value="1">Sensor Saturation</option>'
-		 +'  <option value="2">Overloading because of cold watwe supply</option>'
+		 +' <option  value="0"> Flow Switch Damage </option>'
+		 +'  <option value="1">Spring Scale Damage</option>'
+//		 +'  <option value="2">Overloading because of cold water supply</option>'
 		
 		 +'  </select>'
 		 +'<div class="col-sm-12 ">'
@@ -126,11 +127,11 @@ function fualtFinding()
     $("#canvas-div").html(str);
 	
 	if(randomNumber==0){
-		tableCreateForFualtFinding1();
+		tableCreateForFualtFinding2();
 	}
 	else
 		{
-		tableCreateForFualtFinding2();
+		tableCreateForFualtFinding1();
 		}
 	
     $("#main-div-conf").html("<img src='images/shaft_torque.png' class='img-fluid'>");
@@ -144,11 +145,10 @@ function fualtFinding()
     			$("#main-div-conf").html("");
     			 $("#canvas-div").html("");
     			 $("#alertMsgBox").attr('hidden',true);
-    			 fault.fault = ent;
-    			 data.Fault = fault;
+
     			 
-//    			 resultAnalysis();
-    			 $("#main-div").html("<b class='errorMsgf col-sm-12 '> Result Page inprogress .</b>");
+//    			resultAnalysis();
+    			 $("#main-div").html("<b class='errorMsgf col-sm-12 '> Congratulations. experiment completed successfully</b>");
     		}
     		else{
     			$("#alertMsgBox").attr('hidden',false);
