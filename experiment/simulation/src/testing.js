@@ -54,16 +54,16 @@ function testing() {
 	
 	var motor_Green = paper.image("images/motor.PNG", (x), (y + 145), 130, 120);
 
-	//var switch_button = paper.image("images/flowSwitch.png", (x + 550), (y + 290), 50, 50);
+	var switch_button = paper.image("images/flowSwitch.png", (x + 550), (y + 290), 50, 50);
 //	var minus = paper.image("images/minus.png", (x + 110), (y + 10), 30, 30);
 //	var plus = paper.image("images/plus.png", (x + 210), (y + 10), 30, 30);
 //	var minus_rpm = paper.image("images/minus.png", (x + 90), (y + 450), 30, 30);
 //	var plus_rpm = paper.image("images/plus.png", (x + 210), (y + 450), 30, 30);
 	var minus = paper.image("images/minus.png", (x + 90), (y + 450), 30, 30);
 	var plus = paper.image("images/plus.png", (x + 210), (y + 450), 30, 30);
-	var hook = paper.image("images/hook.jpg", (x + 185), (y + 30), 50, 50).rotate(180);
-	var scale = paper.image("images/roap_scale.PNG", (x + 140), (y- 200 ), 150, 220);
-	var arrow = paper.image("images/arrow.png", (x + 210), (y ), 50, 10);
+	var hook = paper.image("images/hook.png", (x + 190), (y + 30), 50, 50).rotate(180);
+	var scale = paper.image("images/roap_acale.png", (x + 130), (y- 167 ), 150, 200);
+	var arrow = paper.image("images/arrow.png", (x + 210), (y + 15 ), 50, 10);
 
 
 	text_lable(x, y);
@@ -74,20 +74,20 @@ function testing() {
 //	mag_sensor(x, y);
 	water(x+220, y+260);
 	var motor_Red = paper.image("images/motor1.png", (x + 490), (y + 410), 130, 100);
-	var wt_img = paper.image("images/weight.jpg", (x + 130), (y + 280), 0, 0);
+	var wt_img = paper.image("images/weight.png", (x + 130), (y + 280), 0, 0);
 	//var img_roap = paper.image("images/roap_break.png", (x + 120), (y-150), 420, 420).toBack();
 	var img_roap = paper.image("images/roap_drum.PNG", (x +130), (y+143), 150, 120);
-	var submit = paper.image("images/submit.png", (x +500), (y), 100, 80);
-	var toap = paper.image("images/roap_line.png", (x +205), (y+50), 10, 100);
+	var submit = paper.image("images/submit.png", (x +500), (y), 120, 50);
+	var toap = paper.image("images/roap_line.png", (x +205), (y+70), 10, 80);
 	var toap = paper.image("images/roap_line.png", (x +165), (y+250), 10, 100);
 
 
 
-//	paper.rect(x + 150, y + 440, 50, 30).attr({ 'stroke-width': 2, 'fill': 'white' }).toFront();
+	var eng_box = paper.rect(x + 20, y + 100, 50, 40).attr({ 'stroke-width': 2, 'fill': 'red' }).toFront();
 	paper.rect(x + 150, y + 445, 50, 30).attr({ 'stroke-width': 2, 'fill': 'white' }).toFront();
 	paper.rect(x + 400, y , 70, 40).attr({ 'stroke-width': 2, 'fill': 'white' }).toFront();
 	var switch_circle = paper.circle(x + 620, y + 310, 10).attr({ 'stroke': 'black', 'stroke-width': '1.5', 'fill': 'red' });
-	// paper.circle(x + 200, y - 200, 30).attr({ 'stroke': 'black', 'stroke-width': '1.5' });
+	 paper.circle(x + 215, y - 180, 18).attr({ 'stroke': 'black', 'stroke-width': '3' });
 
 
 	function text_lable(x, y) {
@@ -127,7 +127,17 @@ function testing() {
 
 			});
 
-		
+		var sc_txt = paper.text(x + 450, y - 20, "Scale Reading")
+			.attr({
+				'font-size': 18,
+
+			});
+			
+		var rb_txt = paper.text(x + 360, y + 120, "Rope Break Dynamometer")
+			.attr({
+				'font-size': 18,
+
+			});	
 		
 
 		
@@ -149,7 +159,7 @@ function testing() {
 
 
 
-	var selectedtor = paper.text(x + 420, y + 10, torque)
+	var selectedtor = paper.text(x + 425, y + 15, torque)
 		.attr({
 			'font-size': 18,
 			'font-weight': "bold"
@@ -214,12 +224,12 @@ function testing() {
 
 		}
 		else {
-
+		if(engine == 1){ 
 			if (checkAns == 0){ 
 			wt = wt + 1;
 
 			selectedWeight.attr('text', wt);
-			wt_img = paper.image("images/weight.jpg", (x + 130), (y + 280), 80, 80);
+			wt_img = paper.image("images/weight.png", (x + 130), (y + 280), 80, 80);
 			var img_txt = paper.text(x + 170, y + 330, wt)
 				.attr({
 					'font-size': 20,
@@ -231,6 +241,11 @@ function testing() {
 			else{
 				alert("check answer");
 			}	
+		}
+		
+		else{
+			alert("Click on Engine");
+		}
 		}
 
 	});
@@ -252,7 +267,7 @@ function testing() {
 			wt = wt - 1;
 
 			selectedWeight.attr('text', wt);
-			wt_img = paper.image("images/weight.jpg", (x + 130), (y + 280), 80, 80);
+			wt_img = paper.image("images/weight.png", (x + 130), (y + 280), 80, 80);
 			var img_txt = paper.text(x + 170, y + 330, wt)
 				.attr({
 					'font-size': 20,
@@ -407,10 +422,10 @@ function testing() {
 		var y1 = 0;
 		var power = 0;
 		function error_calculation(x, y) {
-			y1 = (wt * (83 - 0) / 15) + 0;
+			y1 = (wt * (60 - 0) / 15) + 0;
 			torque = (wt * (2.1 - 0) / 15) + 0;
 			power = (2 * diameter * 3.14 * (wt*9.81 - torque) * 1400)/(60 * 1000);
-			ans = y1;
+//			ans = y1;
 		console.log("y "+y1)
 		console.log("torque"+torque);
 		$("#btnAnsCheck").prop("disabled", false);
@@ -430,6 +445,7 @@ function testing() {
 		testing.motAct = motCnt;
 		if (flag_switch == 1) {
 			engine = 1;
+			eng_box.attr('fill','green');
 		}
 		else {
 			alert("click on the motor")
@@ -451,31 +467,33 @@ function testing() {
 	});
 	
 	
-	var ans ;
-	arrow_Increment(x, y);
+	var ans = 0;
+//	arrow_Increment(x, y);
 	function arrow_Increment(x, y) {
-		
-		
+		arrow.remove();
+		arrow = paper.image("images/arrow.png", (x + 210), (y - y1 ), 50, 10);
 		var interFloat;
-
-		floatInt = setInterval(function() {
-
-			if (y1 != 0) {
-				arrow.remove();
-				//interFloat = (y - ans);
-				arrow = paper.image("images/arrow.png", (x + 210), (y - y1 ), 50, 10);
-				
-
-			}
-			else {
-				clearInterval(floatInt);
-				off_check = 1;
-				
-				arrow_Dec(x, y);
-			
-			}
-			
-			},1000);
+//
+//		floatInt = setInterval(function() {
+//
+//			if ( ans <= y1) {
+//				arrow.remove();
+//				console.log("hey");
+//				ans = y1 + 1;
+//				
+//				arrow = paper.image("images/arrow.png", (x + 210), (y - ans ), 50, 10);
+//				
+//
+//			}
+//			else {
+//				clearInterval(floatInt);
+//				off_check = 1;
+//				
+////				arrow_Dec(x, y);
+//			
+//			}
+//			
+//			},1000);
 			
 	}
 	
@@ -483,25 +501,27 @@ function testing() {
 	function arrow_Dec(x, y) {
 		
 		arrow.remove();
+		arrow = paper.image("images/arrow.png", (x + 210), (y + 15  ), 50, 10);
 		var interFloat;
 
-		floatDec = setInterval(function() {
-
-			if (y1 == ans) {
-				arrow.remove();
-				//interFloat = (y - ans);
-				y1 = 0;
-				arrow = paper.image("images/arrow.png", (x + 210), (y  ), 50, 10);
-				
-
-			}
-			else {
-				clearInterval(floatDec);
-				off_check = 1;
-			
-			}
-			
-			},1000);
+//		floatDec = setInterval(function() {
+//
+//			if (off_check == 1) {
+//				arrow.remove();
+//				//interFloat = (y - ans);
+//				y1 = 0;
+//				ans = 0;
+//				arrow = paper.image("images/arrow.png", (x + 210), (y +10  ), 50, 10);
+//				
+//
+//			}
+//			else {
+//				clearInterval(floatDec);
+////				off_check = 1;
+//			
+//			}
+//			
+//			},1000);
 	}
 	
 	var torEnt = 0;
@@ -535,7 +555,7 @@ function testing() {
 
 		} else if (id == 4) {
 
-				alert(" Power = ");
+				alert(" Power = 2 X Diameter of Shaft X 3.14 X (Weight X 9.81 - Scale Reading) x 1400)/(60 X 1000)");
 
 		} else {
 			speedAns = $("#speedAns").val().trim();
@@ -594,8 +614,8 @@ function testing() {
 			+ '  <tr style="background-color:grey;color:#fff;" >'
 			+ '  <th scope="col">Speed in RPM </th>'
 			+ '  <th scope="col">Load in kg </th>'
-			+ '   <th scope="col">Calculated Torque (Standard) (Nm)</th>'
-			+ '  <th scope="col">Shaft Torque (Actual) (Nm)</th>'
+			+ '   <th scope="col">Calculated Power (Kw)</th>'
+			+ '  <th scope="col">Scale Reading</th>'
 
 			+ '   </tr>'
 			+ '  </thead>'
@@ -613,7 +633,7 @@ function testing() {
 			+ '  </table>'
 			+ '<div class="row" >'
 			+ '<div class="col-sm-12">'
-			+ '<button type="button"  class="btn btn-primary btnStyle" id="showGraph" hidden >SHOW GRAPH</button>'
+			+ '<button type="button"  class="btn btn-primary btnStyle" id="showGraph">SHOW GRAPH</button>'
 			+ '<button type="button"  class="btn btn-primary btnStyle" id="fault" hidden>Next Level</button>'
 			+ '</div>'
 			+ '</div>'
@@ -622,7 +642,7 @@ function testing() {
 
 		$("#showGraph").click(function() {
 
-		if (masterJson.demo.length >= 4) {
+		if (masterJson.demo.length >= 3) {
 //				if (array[0] != 0 && array[array.length - 1] != 100) {
 //					checkAlert = 1;
 //					alert(" You need to provide next input values as 1 and 100 !!");
@@ -645,6 +665,7 @@ function testing() {
 //					$("#calibration").removeAttr("hidden",false);
 					$("#showGraph").attr("hidden",true);
 					graphCreate();
+					$("#fault").attr("hidden",false);
 					data.Testing = testing;
 					console.log(data);
 				}
@@ -737,8 +758,10 @@ function testing() {
 		
 		$("#fault").click(function() {
 			$("#canvas-div").html("");
+			 $("#canvas-div").html('<img src="images/shaft_torque.png"  width="90%" height="90%">');
 			$("#main-div-conf").html("");
-			fualtFinding();
+//			fualtFinding();
+			shaftConfig();
 			
 		});
 		var str =  '<div class="row">'
@@ -807,8 +830,8 @@ function testing() {
 			+ (x + 615) + ' ' + (y + 480) + 'l 130 0')
 			.attr({ 'stroke': 'black', 'stroke-width': '2', 'fill': '' });
 			
-		paper.path('M' + (x + 130) + ' ' + (y + 250) + 'l  0 -500  l 0 0 l 0 0 z+M'
-			+ (x + 300) + ' ' + (y + 250) + 'l 0 -500 ')
+		paper.path('M' + (x + 130) + ' ' + (y + 250) + 'l  0 -450  l 170 0 l 0 0 +M'
+			+ (x + 300) + ' ' + (y + 250) + 'l 0 -450 ')
 			.attr({ 'stroke': 'black', 'stroke-width': '3', 'fill': '' });	
 
 	}
