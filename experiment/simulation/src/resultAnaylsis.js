@@ -25,7 +25,7 @@
 //	 var	ExptAccurancyCounter=0;
 //	 var	lineralityCounter=0;
 //	 var	ExptlineralityCounter=0;
-//	 
+console.log("Result"); 
 	 
 	 var corrans1 = 0;
 	 var actualCorr = 6 ;

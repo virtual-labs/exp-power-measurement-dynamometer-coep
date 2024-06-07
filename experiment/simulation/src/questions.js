@@ -122,7 +122,7 @@
 		 
 		  
 		  $("#canvas-div").html("");
-		  	$("#centerText2").html('ROPE BREAK DYNAMOMETER CHARACTERIZATION DIAGRAM');
+		  	$("#centerText2").html('ROPE BRAKE DYNAMOMETER CHARACTERIZATION DIAGRAM');
 		  
 						//mimic();
 						testing();	
