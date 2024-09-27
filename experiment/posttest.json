@@ -14,15 +14,15 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which parameters can be measured using a dynamometer?",
+      "question": "What is the primary variable that needs to be measured to calculate power in a rope brake dynamometer?",
       "answers": {
-        "a": "Force",
-        "b": "Torque",
-        "c": "Power",
-        "d": "All of these"
+        "a": "Brake drum diameter",
+        "b": "Length of the rope",
+        "c": "Speed of rotation (RPM)",
+        "d": "Thickness of the drum"
       },
      
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
 	
@@ -40,7 +40,7 @@
     },
 	
 	{
-      "question": "The following typeof dynamometer is used when it is desired to measure the large powers of the steam turbine propelling the naval ship ____",
+      "question": "The following type of dynamometer is used when it is desired to measure the large powers of the steam turbine propelling the naval ship ____",
       "answers": {
         "a": "torsion dynamometer",
         "b": "electrical dynamometer",

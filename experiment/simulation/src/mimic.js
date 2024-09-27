@@ -651,7 +651,7 @@ function mimic() {
 			+ '  <tr style="background-color:#212529;color:#fff;" >'
 			+ '  <th scope="col">Speed in RPM </th>'
 			+ '  <th scope="col">Load in kg </th>'
-			+ '   <th scope="col">Calculated Torque (Standard) (Nm)</th>'
+			+ '   <th scope="col">Calculated Power (Standard) (Nm)</th>'
 			+ '  <th scope="col">Power (Kw)</th>'
 
 			+ '   </tr>'

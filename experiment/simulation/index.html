@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" > -->
     <link rel="stylesheet" href=" https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
+  
+
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+<!--      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
    <link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/mainPage.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -43,6 +51,33 @@ setInterval(blink_text, 1000);
 		<span id="colgName">COEP Technological University , PUNE</span>		
 		
 </header>
+
+<div class="row">
+<div  class="col-sm-2"> 
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Procedure
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Message Box</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="    overflow-y: scroll;height:600px">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+<!--         <button type="button" class="btn btn-primary">OK</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+ </div>	
 	
 <div  class="row container-fluid" id="main-div">
 	<div class="col-lg-5" id="main-div">
@@ -101,6 +136,47 @@ Copyrights &copy; COEP - Virtual Lab
 <script type="text/javascript" src="src/questions.js"></script>
 <script type="text/javascript" src="src/faultFinding.js"></script>
 <script type="text/javascript" src="src/analysis.js"></script>
+
+<script >
+var proc = '';
+
+proc += ''
++ '<h3> Procedure</h3>'
+
++ '<h3> Configuration</h3>'
++ '<ol><li> select motor size , diameter of drum and check/click the configuration button. (we are considering standard single phase motor sizes).'
++ '<li>click on next level </ol>'
+
++ '<h3> Basic Knowledge</h3> '
++ '<ol><li> Answer all the questions and click on next level.</ol>'
+
++ '<h3> Part A</h3>'
++ '<ol><li> Start the cold water pump for cooling system.'
++ '<li> Click on motor and start cold water supply. '
++ '<li> click on Engine and start loading the weight '
++ '<li> Check the spring balance reading and calculate the power and submit the answer.'
++ '<li> repeat the process for 5-6 times with different loads and observe the table reading and change in power with weight.</ol>'
+
+
+
+
++ '<h3> Part B</h3>'
++ '<ol><li> Start the cold water pump for cooling system.'
++ '<li> select the speed of the motor and weight.'
++ '<li> start the induction motor with loading condition and check the power sensor reading.'
++ '<li> calculate the standard torque for loading condition and submit the answer.'
++ '<li> Repeat the above process , increasing maximum loading weights with same speed.'
++ '<li> plot the graph by clicking on "show graph" button after 5-6 readings and observe the characterisation graph.'
++ '(while changing the speed of motor, start loading the motor with minimum to maximum weight.) '
++ '<li> click on "Next level" button to go next level.</ol>'
+
++ '<h3> Fault Finding</h3>'
++ '<ol><li> Observe the shown table and select the fault accordingly.'
++ '<li> After selecting the correct fault Result will be displayed.'
+
++ '</ol>'
+
+$(".modal-body").html(proc);</script>
 
 
 
