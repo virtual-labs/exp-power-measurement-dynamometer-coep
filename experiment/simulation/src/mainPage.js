@@ -42,8 +42,8 @@ var htm='<div class="row" >'
 	   +'<select  class="form-control form-control-lg  selectStyle"  id="lengthType">'
 	   +'<option value="0" selected>--- Select meter --- </option>'
 	   +'<option value="0.3" >0.3</option>'
-	   +'<option value="0.4">0.4</option>'
-	   +'<option value="0.5">0.5</option>'
+//	   +'<option value="0.4">0.4</option>'
+//	   +'<option value="0.5">0.5</option>'
 	  +'<option value=" "> </option>'
 	  
 	  

@@ -94,7 +94,8 @@
 						dataQues.corrAns = ansCount;
 						 data.corrAns = dataQues;
 						 console.log(data);
-						alert("Test Submitted Successfully <br/>Correct Answers Are : " + ansCount);
+						alert("Test Submitted Successfully.Correct Answers Are : " + ansCount);
+						$("#testSubmit").prop('disabled',true);	
 //						mimic();
 		   					
 					}

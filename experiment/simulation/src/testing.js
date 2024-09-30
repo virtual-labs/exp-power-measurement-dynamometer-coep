@@ -714,21 +714,21 @@ function testing() {
 						min: 1,
 						max: Xmax,
 						title: {
-							text: 'Standard Torque'
+							text: 'Power'
 						}
 					},
 					yAxis: {
 						min: 1,
 						max: Ymax,
 						title: {
-							text: 'Actual Torque'
+							text: 'Speed'
 						}
 					},
 					series: [
 						{
 							type: 'line',
-							name: 'Standard Torque values',
-							data: [[1 , 1], [Xmax, Ymax]],
+							name: 'power',
+							data: [[0 , 0], [Xmax, Ymax]],
 							marker: {
 								enabled: false
 							},
@@ -742,7 +742,7 @@ function testing() {
 
 						{
 							type: 'scatter',
-							name: 'Actual Torque values',
+							name: 'speed',
 
 							data: graphData1,
 							marker: {
