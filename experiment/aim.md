@@ -1,5 +1,5 @@
 ### Aim 
-Power Measurement using dynamometer
+Power Measurement using Dynamometer
 
 ### Objectives
 - Study various techniques of power measurement.

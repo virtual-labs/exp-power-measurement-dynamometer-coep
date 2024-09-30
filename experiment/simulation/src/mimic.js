@@ -769,7 +769,7 @@ function mimic() {
 				console.log(" Standard Torque v/s Actual Torque " + graphData1);
 				Highcharts.chart('canvas-div', {
 					title: {
-						text: ' Graph of Standard Torque & Actual Torque '
+						text: ' Graph of Standard Power & Weight '
 					},
 //					subtitle: {
 //						text: 'Meter Constant is  pulses (per/ltr)'
@@ -778,14 +778,14 @@ function mimic() {
 						min: 0,
 						max: verifyMax,
 						title: {
-							text: 'Standard Torque'
+							text: 'Standard Power'
 						}
 					},
 					yAxis: {
 						min: 0,
 						max: verifyMax,
 						title: {
-							text: 'Actual Torque'
+							text: 'Weight'
 						}
 					},
 					series: [
@@ -806,7 +806,7 @@ function mimic() {
 
 						{
 							type: 'scatter',
-							name: 'Actual Torque values',
+							name: 'Actual Power values',
 
 							data: graphData1,
 							marker: {
@@ -855,6 +855,8 @@ function mimic() {
 			.attr({ 'stroke': 'black', 'stroke-width': '2', 'fill': '#64b8e8' });
 		paper.path('M' + (x + 170) + ' ' + (y + 150) + 'l 0 0 l 0 -10  l 0 100 l 0 0 l 0 0 l  0 0 l 0 0 l 0 0')
 			.attr({ 'stroke': 'black', 'stroke-width': '2', 'fill': 'black' });
+		paper.path('M' + (x + 210) + ' ' + (y + 195) + 'l 100 0 l 0 0  l 0 0 l 0 0 l 0 0 l  0 0 l 0 0 l 0 0')
+			.attr({ 'stroke': 'black', 'stroke-width': '7', 'fill': 'black' });		
 	}
 
 
