@@ -1,8 +1,8 @@
 ### Procedure
 
 ### Configuration:-
-- select motor size , diameter of drum and check/click the configuration button. (we are considering standard single phase motor sizes).
-- click on next level 
+- Select motor size , diameter of drum and check/click the configuration button. (we are considering standard single phase motor sizes).
+- Click on Check Configuration 
 
 ### Basic Knowledge - 
 - Answer all the questions and click on next level.
@@ -11,8 +11,9 @@
 
 #### Part A
 - Click on motor and start cold water supply.
-- click on Engine and start loading the weight .
-- Check the spring balance reading and calculate the power and submit the answer.
+- Click on Engine and start loading the weight .
+- Check the spring balance reading and click on Submit button beside meter reading.
+- Calculate the power and submit the answer to left side text box.
 - repeat the process for 5-6 times with different loads and observe the table reading and change in power with weight.
 
 #### Part B
@@ -27,6 +28,6 @@
 
 ### Fault Finding:
 1. Observe the shown table and select the fault accordingly.
-2. After selecting the correct fault Result will be displayed.
+2. After selecting the correct fault. All stages are completed.
 
 

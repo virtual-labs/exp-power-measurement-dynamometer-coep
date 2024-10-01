@@ -711,7 +711,7 @@ function mimic() {
 					data.Mimic = mimic;
 					console.log(data);
 					graphCreate();
-					calibration();
+					
 					
 					
 				}
@@ -728,7 +728,7 @@ function mimic() {
 				var graphData1 = [];
 				for (var i = 0; i < masterJson.demo.length; i++) {
 					xdata[i] = parseFloat(masterJson.demo[i].torque_corr);
-					ydata[i] = parseFloat(masterJson.demo[i].power);
+					ydata[i] = parseFloat(masterJson.demo[i].load);
 
 				}
 				for (var j = 0; j < masterJson.demo.length; j++) {

@@ -443,6 +443,7 @@ function testing() {
 		
 		motCnt++;
 		testing.motAct = motCnt;
+		testing.motExp = 1;
 		if (flag_switch == 1) {
 			engine = 1;
 			eng_box.attr('fill','green');
@@ -457,8 +458,8 @@ function testing() {
 	
 	submit.click(function(event) {
 		id = 1;
-		motCnt++;
-		testing.motAct = motCnt;
+		motEnt++;
+		testing.wtsubmit = motEnt;
 		
 			error_calculation(x, y) ;
 			arrow_Increment(x, y) ;
@@ -526,8 +527,8 @@ function testing() {
 	
 	var torEnt = 0;
 	$("#btnAnsCheck").click(function() {
+		torEnt++;
 		
-		 testing.torExp = motEnt;
 		 testing.torAct = torEnt;
 		var speedAns = $("#speedAns").val().trim();
 		console.log("ans check" + speedAns);
@@ -681,7 +682,7 @@ function testing() {
 				var graphData1 = [];
 				for (var i = 0; i < masterJson.demo.length; i++) {
 					xdata[i] = parseFloat(masterJson.demo[i].torque_corr);
-					ydata[i] = parseFloat(masterJson.demo[i].RPM);
+					ydata[i] = parseFloat(masterJson.demo[i].load);
 
 				}
 				for (var j = 0; j < masterJson.demo.length; j++) {
@@ -703,25 +704,26 @@ function testing() {
 				console.log("Xmax " + Xmax);
 				console.log("Ymax " + Ymax);
 				console.log(" Standard Torque v/s Actual Torque " + graphData1);
+				
 				Highcharts.chart('canvas-div', {
 					title: {
-						text: ' Graph of Standard Torque & Speed '
+						text: ' Graph of Standard Power & Weight '
 					},
 //					subtitle: {
 //						text: 'Meter Constant is  pulses (per/ltr)'
 //					},
 					xAxis: {
-						min: 1,
+						min: 0,
 						max: Xmax,
 						title: {
 							text: 'Power'
 						}
 					},
 					yAxis: {
-						min: 1,
+						min: 0,
 						max: Ymax,
 						title: {
-							text: 'Speed'
+							text: 'Weight'
 						}
 					},
 					series: [
@@ -758,10 +760,10 @@ function testing() {
 		
 		$("#fault").click(function() {
 			$("#canvas-div").html("");
-			 $("#canvas-div").html('<img src="images/shaft_torque.png"  width="90%" height="90%">');
 			$("#main-div-conf").html("");
-//			fualtFinding();
+			 $("#canvas-div").html('<img src="images/shaft_torque.png"  width="90%" height="90%">');
 			shaftConfig();
+			
 			
 		});
 		var str =  '<div class="row">'
