@@ -1,15 +1,15 @@
 # Dynamometer 
-A dynamometer is a load device which is generally used for measuring the power output of an engine. Several kinds of dynamometers are common, some of them being referred to as “breaks” or “break dynamometers”: dry friction break dynamometers, hydraulic or water break dynamometers and eddy current Dynamometers.
+A dynamometer is a load device which is generally used for measuring the power output of an engine. Several kinds of dynamometers are common, some of them being referred to as “braks” or “brake dynamometers”: dry friction break dynamometers, hydraulic or water break dynamometers and eddy current Dynamometers.
 
 Dry friction dynamometers are the oldest kind, and consist of some sort of mechanical breaking device, often a belt or frictional “shoe” which rubs a rotating hub or shaft. The hub or shaft is spun by the engine. Increasing tension in the belt, or force of the shoe against the hub increases the load on the engine. Hydraulic dynamometers are basically hydraulic pumps where the impeller is spun by the engine. Load on the engine is varied by opening or closing a valve, which changes back pressure on the hydraulic pump. Eddy current dynamometers are electromagnetic load devices. The engine being tested spins a disk in the dynamometer. Electrical current passes through coils surrounding the disk, and induce a magnetic resistance to the motion of the disk. Varying the current varies the load on the engine. The dynamometer applies a resistance to the rotation of the engine. If the dynamometer is connected to the engine’s output shaft it is referred to as an Engine Dynamometer. When the dynamometer is connected to the vehicles drive wheels it is called a Chassis Dynamometer. The force exerted on the dynamometer housing is resisted by a strain measuring device.
 
-Several components are typically packaged together in a dynamometer: the shaft with bearings, the resistance surface, the resistance mechanism in a “free” rotating housing, a strain gage, and a speed sensor (see figure 1 for a schematic of an
-Eddy Current Dynamometer). Generally some method of cooling is also required, and this may require either a heat exchanger or air or water circulation, this is not shown in figure 1. The entire assembly is typically mounted on a stout frame, which is
+Several components are typically packaged together in a dynamometer: the shaft with bearings, the resistance surface, the resistance mechanism in a “free” rotating housing, a strain guage, and a speed sensor (see figure 1 for a schematic of an
+Eddy Current Dynamometer). Generally some method of cooling is also required, and this may require either a heat exchanger or air or water circulation. The entire assembly is typically mounted on a stout frame, which is
 mechanically linked to the frame of the engine being tested.
 
-The force signal (F) from the strain gage may be converted into a torque (T)
+The force signal (F) from the strain guage may be converted into a torque (T)
 by multiplying by the distance from the center of the shaft to the pivot point of the
-strain gage :
+strain guage :
 T = R x F
 If the units are in Newton-meters and shaft speed (S) is measured in radians
 per second, then the shaft power or break power P of the engine can be calculated
