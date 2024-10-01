@@ -424,9 +424,9 @@ function testing() {
 		function error_calculation(x, y) {
 			y1 = (wt * (60 - 0) / 15) + 0;
 			torque = (wt * (2.1 - 0) / 15) + 0;
-			power = (2 * diameter * 3.14 * (wt*9.81 - torque) * 1400)/(60 * 1000);
+			power = ((2 * diameter * 3.14 * (wt*9.81 - torque) * 1400)/(60 * 1000)).toFixed(2);
 //			ans = y1;
-		console.log("y "+y1)
+		console.log("y "+y1);
 		console.log("torque"+torque);
 		$("#btnAnsCheck").prop("disabled", false);
 		$("#speedAns").prop("disabled", false);
@@ -532,7 +532,9 @@ function testing() {
 		 testing.torAct = torEnt;
 		var speedAns = $("#speedAns").val().trim();
 		console.log("ans check" + speedAns);
-		flow = power.toFixed(2);
+		flow = parseFloat(power);
+		console.log("power" + flow);
+		
 		if (id <= 3) {
 			if (speedAns == flow) {
 				checkAns = 0;
@@ -588,7 +590,7 @@ function testing() {
 
 	function tableCreate() {
 		speedJson = {};
-		speedJson.torque_corr = power.toFixed(2);
+		speedJson.torque_corr = power;
 		speedJson.torque_err = torque.toFixed(2);
 		speedJson.load = wt;
 		speedJson.RPM = speed;
