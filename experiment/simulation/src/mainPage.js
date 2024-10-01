@@ -44,7 +44,7 @@ var htm='<div class="row" >'
 	   +'<option value="0.3" >0.3</option>'
 //	   +'<option value="0.4">0.4</option>'
 //	   +'<option value="0.5">0.5</option>'
-	  +'<option value=" "> </option>'
+	 
 	  
 	  
 	   +'</select>'

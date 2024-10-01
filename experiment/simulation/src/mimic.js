@@ -464,7 +464,7 @@ function mimic() {
 	
 	function power_calculation(x,y){
 		torque_Stand(x, y);
-		power_corr =(torque_corr * speed ) /  ( 9.5488 * 1000);
+		power_corr =((torque_corr * speed ) /  ( 9.5488 * 1000)).toFixed(2);
 		console.log("power calculated" + power_corr);
 		
 	}
@@ -558,7 +558,7 @@ function mimic() {
 
 		var speedAns = $("#speedAns").val().trim();
 		console.log("ans check" + speedAns);
-		flow = power_corr.toFixed(2);
+		flow = parseFloat(power_corr);
 		if (id <= 3) {
 			if(speedAns=="")
 			{
@@ -626,7 +626,7 @@ function mimic() {
 		speedJson.load = wt;
 		speedJson.RPM = speed;
 		speedJson.error = error.toFixed(2);
-		speedJson.power = power_corr.toFixed(2);
+		speedJson.power = power_corr;
 		
 		//				console.log("Flow " + flowJson.mFlow);
 		arrayJson.push(speedJson);
@@ -651,7 +651,7 @@ function mimic() {
 			+ '  <tr style="background-color:#212529;color:#fff;" >'
 			+ '  <th scope="col">Speed in RPM </th>'
 			+ '  <th scope="col">Load in kg </th>'
-			+ '   <th scope="col">Calculated Power (Standard) (Nm)</th>'
+			+ '   <th scope="col">Calculated Torque (Standard) (Nm)</th>'
 			+ '  <th scope="col">Power (Kw)</th>'
 
 			+ '   </tr>'

@@ -14,7 +14,7 @@
 - Click on Engine and start loading the weight .
 - Check the spring balance reading and click on Submit button beside meter reading.
 - Calculate the power and submit the answer to left side text box.
-- repeat the process for 5-6 times with different loads and observe the table reading and change in power with weight.
+- Repeat the process for 5-6 times with different loads and observe the table reading and change in power with weight.
 
 #### Part B
 - Start the cold water pump for cooling system.
