@@ -100,7 +100,7 @@ $("#centerText1").html("EDDY CURRENT DYNAMOMETER DIAGRAM");
 	 $("#nextFaultFindingDiv").html("");
 	 $("#calibrationDiv").html("");
 	 $("#panelHeadingBold").html(""); 
-	  randomNumber=Math.round(Math.random() * 2);
+	  randomNumber=Math.round(Math.random() * 1);
 	 randomNumber = parseInt(randomNumber);
 	 console.log("random  "+randomNumber);
 	var str=''
@@ -110,7 +110,7 @@ $("#centerText1").html("EDDY CURRENT DYNAMOMETER DIAGRAM");
 		+'</div>'
 		 
 		 +'<div class="col-sm-12">'
-		 +' <select  class="form-control col-sm-12" id="errorSelection">'
+		 +' <select  class="form-control col-sm-12" id="errorSelection" style="height:40px;">'
 		 +' <option  value="">Select Error type </option>'
 		 +' <option  value="0"> Flow Switch Damage </option>'
 		 +'  <option value="1">Spring Scale Damage</option>'
@@ -155,7 +155,8 @@ $("#centerText1").html("EDDY CURRENT DYNAMOMETER DIAGRAM");
     		}
     		else{
     			$("#alertMsgBox").attr('hidden',false);
-    			$("#msgBox").html("<b class='errorMsgf'> Wrong selection . </b>");	
+    			$("#msgBox").html("<b class='errorMsgf'> Wrong selection . </b>");
+//    			fualtFinding();	
     			}
 //    	}
 //    	else{
