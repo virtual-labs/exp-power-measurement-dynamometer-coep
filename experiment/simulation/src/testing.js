@@ -1,6 +1,6 @@
 function testing() {
 	//	var paper = new Raphael(document.getElementById('canvas-div'), 1000, 1000);
-
+	$("#centerText1").html('CALCULATION');
 	$('#canvas-div').removeAttr('width');
 	$('#canvas-div').removeAttr('height');
 	var w = 1000;
@@ -133,7 +133,7 @@ function testing() {
 
 			});
 			
-		var rb_txt = paper.text(x + 360, y + 120, "Rope Break Dynamometer")
+		var rb_txt = paper.text(x + 360, y + 120, "Rope Brake Dynamometer")
 			.attr({
 				'font-size': 18,
 
@@ -764,6 +764,8 @@ function testing() {
 			$("#canvas-div").html("");
 			$("#main-div-conf").html("");
 			 $("#canvas-div").html('<img src="images/shaft_torque.png"  width="90%" height="90%">');
+			$("#centerText1").html('CONFIGURE EDDY CURRENT DYNAMOMETER');
+			$("#centerText2").html('EDDY CURRENT DYNAMOMETER DYNAMOMETER CHARACTERIZATION DIAGRAM');
 			shaftConfig();
 			
 			

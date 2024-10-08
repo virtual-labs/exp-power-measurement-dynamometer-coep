@@ -131,7 +131,7 @@ var htm='<div class="row" >'
 				   console.log(data);
 
 				  $("#main-div-conf").html("");
-				  $("#main-div-conf").html('<img src="images/dynamometer.png"  width="90%" height="90%">');
+				  $("#main-div-conf").html('<img src="images/dynamo1.png"  width="90%" height="90%">');
 				
 				  
 				  $("#canvas-div").html("");
