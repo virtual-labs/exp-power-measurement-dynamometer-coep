@@ -88,19 +88,20 @@ function tableCreateForFualtFinding1()
 
  var randomNumber;
  var ent = 0;
+ fault = {};
 function fualtFinding()
 {
 	
-$("#centerText1").html("SHAFT TORUE DIAGRAM");
-	 $("#centerText2").html("FUALT FINDING ");
+$("#centerText1").html("EDDY CURRENT DYNAMOMETER DIAGRAM");
+	 $("#centerText2").html("FAULT FINDING ");
 	$("#main-div-conf").html("");
 	 $("#canvas-div").html("");
 	 
 	 $("#nextFaultFindingDiv").html("");
 	 $("#calibrationDiv").html("");
 	 $("#panelHeadingBold").html(""); 
-//	  randomNumber=Math.round(Math.random() * 2);
-	 randomNumber = 1;
+	  randomNumber=Math.round(Math.random() * 2);
+	 randomNumber = parseInt(randomNumber);
 	 console.log("random  "+randomNumber);
 	var str=''
 	str+='<div class="row ">'
@@ -110,7 +111,7 @@ $("#centerText1").html("SHAFT TORUE DIAGRAM");
 		 
 		 +'<div class="col-sm-12">'
 		 +' <select  class="form-control col-sm-12" id="errorSelection">'
-//		 +' <option  value="0">Select Error type </option>'
+		 +' <option  value="">Select Error type </option>'
 		 +' <option  value="0"> Flow Switch Damage </option>'
 		 +'  <option value="1">Spring Scale Damage</option>'
 //		 +'  <option value="2">Overloading because of cold water supply</option>'
@@ -138,6 +139,8 @@ $("#centerText1").html("SHAFT TORUE DIAGRAM");
 	
     $("#errorSelection").change(function() {
 		ent++;
+		fault.fault = ent;
+		 data.Fault = fault;
     	var selectedOption=$("#errorSelection").val();
     	console.log("selectedOption   "+selectedOption);
 //    	if(counter<=3){
@@ -147,8 +150,8 @@ $("#centerText1").html("SHAFT TORUE DIAGRAM");
     			 $("#alertMsgBox").attr('hidden',true);
 
     			 
-//    			resultAnalysis();
-    			 $("#main-div").html("<b class='errorMsgf col-sm-12 '> Congratulations. experiment completed successfully</b>");
+					 result();
+//    			 $("#main-div").html("<b class='errorMsgf col-sm-12 '> Congratulations. experiment completed successfully</b>");
     		}
     		else{
     			$("#alertMsgBox").attr('hidden',false);

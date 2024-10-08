@@ -1,6 +1,6 @@
 function mimic() {
 	//	var paper = new Raphael(document.getElementById('canvas-div'), 1000, 1000);
-
+	 $("#centerText2").html("EDDY CURRENT DYNAMOMETER CHRACTERIZATION DIAGRAM");
 	$('#canvas-div').removeAttr('width');
 	$('#canvas-div').removeAttr('height');
 	var w = 1000;

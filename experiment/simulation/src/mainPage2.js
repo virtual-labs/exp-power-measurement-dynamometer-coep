@@ -156,6 +156,8 @@ var htm='<div class="row" >'
 				  
 				  $("#canvas-div").html("");
 //				  showQuestions();
+					$("#centerText1").html('CALCULATION');
+					$("#centerText2").html('ROPE BRAKE DYNAMOMETER CHARACTERIZATION DIAGRAM');
 					mimic();
 				
 
