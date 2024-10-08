@@ -7,7 +7,7 @@
         "a": "Torsional brake dynamometer",
         "b": "Belt Transmission dynamometer",
         "c": "Epicyclic train dynamometer",
-        "d": "Prony dynamometer"
+        "d": "Prony brake dynamometer"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
