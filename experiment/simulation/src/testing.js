@@ -668,6 +668,8 @@ function testing() {
 //					$("#calibration").removeAttr("hidden",false);
 					$("#showGraph").attr("hidden",true);
 					graphCreate();
+					$("#tstAns").attr("hidden",true);
+					
 					$("#fault").attr("hidden",false);
 					data.Testing = testing;
 					console.log(data);
@@ -765,7 +767,7 @@ function testing() {
 			$("#main-div-conf").html("");
 			 $("#canvas-div").html('<img src="images/shaft_torque.png"  width="90%" height="90%">');
 			$("#centerText1").html('CONFIGURE EDDY CURRENT DYNAMOMETER');
-			$("#centerText2").html('EDDY CURRENT DYNAMOMETER DYNAMOMETER CHARACTERIZATION DIAGRAM');
+			$("#centerText2").html('EDDY CURRENT DYNAMOMETER CHARACTERIZATION DIAGRAM');
 			shaftConfig();
 			
 			

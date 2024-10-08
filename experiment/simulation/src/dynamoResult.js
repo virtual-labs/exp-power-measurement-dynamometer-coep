@@ -121,7 +121,7 @@ var htm = ''
 
 	+ '<div class="col-md-12">'
 	+ ' <div class="panel remarkBground" >'
-	+ ' <div class="panel-body remark" ><center>Congratulations!!! <br> <b>Roap Brake Dynamometer simulation is completed successfully!!</b>'
+	+ ' <div class="panel-body remark" ><center>Congratulations!!! <br> <b> Dynamometer simulations are completed. </b>'
 	+ '<br> <b> </b></center></div>'
 	+ '</div>'
 	+ '</div>'

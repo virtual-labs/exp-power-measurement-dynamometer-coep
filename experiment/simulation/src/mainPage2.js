@@ -140,7 +140,8 @@ var htm='<div class="row" >'
 					 
 					  +'</div>'
 					  $("#main-div-conf").html(htm);
-				CalculateActualFlowStr = '<div class="col-sm-3">'
+				CalculateActualFlowStr = '<div id = "mchk">'
+				      +'<div class="col-sm-4">'
 				       +'<label  id=""  class="" style="font-size:16px;margin-top:35px;">Expected Power in(Kw) :</label>'
 				       +'</div>'
 			           +'<div class="col-sm-4">'
@@ -148,6 +149,7 @@ var htm='<div class="row" >'
 				       +'</div>'
 				       +'<div class="col-sm-4">'
 				       +'<br><button type="submit" id="btnAnsCheck" style="margin-top:10px;width:100%;" class=" btn btn-primary" data-toggle="modal" data-target="#mimicModel" disabled>Submit</button>'
+				       +'</div>'
 				       +'</div>'
 				      
 				 $("#CalculateActualFlow").html(CalculateActualFlowStr);

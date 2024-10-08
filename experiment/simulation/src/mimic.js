@@ -255,9 +255,9 @@ function mimic() {
 			}
 			else{
 				const index = array.indexOf(wt);
-			if (index > -1) { 
- 				array.splice(index, 1); 
-			}
+//			if (index > -1) { 
+// 				array.splice(index, 1); 
+//			}
 				alert("check answer");
 			}	
 		}
@@ -291,10 +291,10 @@ function mimic() {
 				});
 			}
 			else{
-				const index = array.indexOf(wt);
-				if (index > -1) { 
- 				array.splice(index, 1); 
-				}
+//				const index = array.indexOf(wt);
+//				if (index > -1) { 
+// 				array.splice(index, 1); 
+//				}
 				alert("check answer");
 			}
 		}
@@ -691,7 +691,7 @@ function mimic() {
 
 				}
 
-				 if (array[0] != 0) {
+				else if (array[0] != 0) {
 					checkAlert = 1;
 					alert("You need to provide next input value as 0 !!");
 
@@ -708,6 +708,7 @@ function mimic() {
 				if (checkAlert == 0) {
 					$("#calibration").removeAttr("hidden",true);
 					$("#showGraph").attr("hidden",true);
+					$("#mchk").attr("hidden",true);
 					data.Mimic = mimic;
 					console.log(data);
 					graphCreate();
