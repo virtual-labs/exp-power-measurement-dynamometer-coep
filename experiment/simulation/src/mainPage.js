@@ -68,6 +68,8 @@ var htm='<div class="row" >'
 		      +'<button type="button" class="btn btn-danger btnStyle" id="checkConfg" disabled>CHECK CONFIGURATION </button>'
 		   +'</div>'
 	   +'</div>'
+	   
+	   
   $("#main-div-conf").html(htm);
 			$("#motorSize").change(function(){
 //				 if(lengthType==0 )
