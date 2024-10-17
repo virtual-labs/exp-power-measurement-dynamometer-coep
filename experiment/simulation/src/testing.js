@@ -240,11 +240,13 @@ function testing() {
 			}
 			else{
 				alert("check answer");
+				$("#modelMsg123").html("<b class='boldTextRed'>check answer ");
 			}	
 		}
 		
 		else{
 			alert("Click on Engine");
+			$("#modelMsg123").html("<b class='boldTextRed'>Click on Engine ");
 		}
 		}
 
@@ -550,7 +552,9 @@ function testing() {
 				//event.stopPropagation();
 			} else if (speedAns != flow) {
 
-				alert("Entered value is incorrect.Try it again ");
+			
+				 $("#modelMsg").html("<b class='boldTextRed'>Entered value is incorrect.Try again . </b>");
+				 $("body").css("padding","0px 0px 0px 0px");
 
 
 			}
@@ -558,7 +562,9 @@ function testing() {
 
 		} else if (id == 4) {
 
-				alert(" Power = 2 X Diameter of Shaft X 3.14 X (Weight X 9.81 - Scale Reading) x 1400)/(60 X 1000)");
+				
+			 $("#modelMsg").html("<b class='boldTextRed'>Power = 2 X Diameter of Shaft X 3.14 X (Weight X 9.81 - Scale Reading) x 1400)/(60 X 1000) </b>");
+			 $("body").css("padding","0px 0px 0px 0px");
 
 		} else {
 			speedAns = $("#speedAns").val().trim();
@@ -577,7 +583,9 @@ function testing() {
 				event.stopPropagation();
 			} else {
 				checkAns = 0;
-				alert("correct answer is " + flow);
+				
+			 $("#modelMsg").html("<b class='boldTextRed'>Correct answer is " + flow+"</b>");
+			 $("body").css("padding","0px 0px 0px 0px");
 
 			}
 		}
