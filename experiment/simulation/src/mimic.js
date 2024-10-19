@@ -226,10 +226,9 @@ function mimic() {
 		torque_Stand(x, y);
 		count = count + 1;
 		if (wt >= weight_max) {
-			if (weight_max >= 4)
-			{ 
+			 
 				alert("Max limit");
-			}
+			
 //			else 
 //			{
 //				alert("Please select the another configuration");
@@ -588,7 +587,7 @@ function mimic() {
 		} else if (id == 4) {
 
 				
-				 $("#modelMsg").html("<b class='boldTextRed'>Power = Torque X Speed / 9.5488 X 1000 </b>");
+				 $("#modelMsg").html("<b class='boldTextRed'>Power = (Torque X Speed  X 1000) / (9.5488) </b>");
 				 $("body").css("padding","0px 0px 0px 0px");
 
 		} else {
