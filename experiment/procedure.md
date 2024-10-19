@@ -11,7 +11,7 @@
 
 #### Part A
 - Click on motor and start cold water supply.
-- Click on Engine and start loading the weight .
+- Click on Engine image and start loading the weight .
 - Check the spring balance reading and click on Submit button beside meter reading.
 - Calculate the power and submit the answer to left side text box.
 - Repeat the process for 5-6 times with different loads and observe the table reading and change in power with weight.
@@ -20,9 +20,9 @@
 - Start the cold water pump for cooling system.
 - Start the induction motor with no load condition and check the power sensor reading.
 - calculate the standard power (upto two decimals) for no load condition and submit the answer.
-- load the weight , start induction motor and check the sensor power reading.
+- load the weight , start induction motor and check the sensor power reading  (torque sensor reset to zero and engine stops.).
 - calculate the standard power (upto two decimals) for load condition and submit the answer.
-- Repeat the same process for loading the till the maximum weights.
+- Repeat the same process for from point no. 3, loading the till the maximum weights.
 - Observe the reading , calculate the standard torque for every observation and submit the answer.
 - plot the graph by clicking on "show graph" button after taking atleast 5-6 readings.
 

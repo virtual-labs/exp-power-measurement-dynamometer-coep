@@ -47,8 +47,7 @@
 
 			questions += '<div class="buttonDiv">'
 				+ '<button class="btn btn-danger" id="testSubmit" data-toggle="modal" data-target="#myModal">Submit Test</button>'
-				+ '<button id="mimicSubmit" class="btn btn-danger"  data-toggle="modal" data-target="#myModal" >Next Level</button>'
-				
+				+ '<button class="btn btn-danger" id="mimicSubmit"  data-toggle="modal" >Next Level</button>'
 				+ ' <!-- Modal -->'
 				+ '<div class="modal fade" id="myModal" role="dialog">'
 				+ ' <div class="modal-dialog modal-md">'
@@ -69,6 +68,7 @@
 				+ '</div>'
 				+ '</div>'
 				+ '</div>'
+				
 			
 				
 			
@@ -94,8 +94,8 @@
 
 						if (myRadio == null) {
 							flag = flag && false;
-							alert('Please attempt all the questions');
-
+//							$("#modelMsg").html("<b class='boldTextRed'>Please attempt all the questions.</b>");
+							alert("Please attempt all the questions");
 							break;
 						}
 						arr.push({
@@ -117,8 +117,9 @@
 						 data.corrAns = dataQues;
 						 console.log(data);
 						 $("body").css("padding","0px");
-						$("#modelMsg").html("<b class='boldTextRed'>Please attempt all the questions.</b>");
-						alert("Test Submitted Successfully.Correct Answers Are : " + ansCount);
+						
+//						 $("#modelMsg").html("<b class='boldTextGreen'>Test Submitted Successfully . Correct Answers Are : " + ansCount+"</b>");
+						alert("Test Submitted Successfully . Correct Answers Are : " + ansCount+"");
 						$("#testSubmit").prop('disabled',true);	
 //						mimic();
 		   					

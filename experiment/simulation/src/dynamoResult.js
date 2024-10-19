@@ -95,16 +95,16 @@ quesPercent = parseFloat(quesPercent);
 
 console.log(quesPercent);
 
-	var powperct = ( powwor/(powcorr)*100).toFixed(1);
+	var powperct = (powcorr /(powwor)*100).toFixed(1);
 	powperct = parseFloat(powperct);
 	 console.log("rope__"+powperct);
 	
- var eddprect = ( wrong/(correct)*100).toFixed(1);
+ var eddprect = ( correct /(wrong)*100).toFixed(1);
 	eddprect = parseFloat(eddprect);
 	 console.log("eddy__"+eddprect);
 	
 	 
-	 var faultperct = (1/(fault)*100).toFixed(1);
+	 var faultperct = ((fault/1)*100).toFixed(1);
 	 faultperct = parseFloat(faultperct);
 	 console.log(faultperct);
 	
