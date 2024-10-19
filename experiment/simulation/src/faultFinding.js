@@ -63,7 +63,7 @@ function tableCreateForFualtFinding1()
 							tableMainDiv += '<tr>'
 //							+ '   <td><center>' + masterJson.demo[i].RPM + '</center></td>'
 							+ '   <td style="background-color:#83e3998a;"><center>' + masterJson.demo[i].torque_corr+ '</center></td>'
-							+ '   <td style="background-color:#de767645;"><center>' + errorshaft + '</center></td>'
+							+ '   <td style="background-color:#de767645;"><center>' + errorshaft.toFixed(2) + '</center></td>'
 							+ '     </tr>'
 						
 						}
@@ -73,7 +73,7 @@ function tableCreateForFualtFinding1()
 						tableMainDiv += '<tr>'
 //							+ '   <td><center>' + masterJson.demo[i].RPM + '</center></td>'
 							+ '   <td style="background-color:#83e3998a;"><center >' + masterJson.demo[i].torque_corr + '</center></td>'
-							+ '   <td style="background-color:#de767645;"><center >' + errorshaft + '</center></td>'
+							+ '   <td style="background-color:#de767645;"><center >' + errorshaft.toFixed(2) + '</center></td>'
 							+ '     </tr>'
 						}
 					
