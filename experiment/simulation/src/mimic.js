@@ -19,7 +19,7 @@ function mimic() {
 		paper.setSize('90%', '90%');
 	}
 
-
+	$("#refer").prop("hidden",false);
 	x = 50;
 	y = 50;
 	wt = 0;
@@ -772,6 +772,8 @@ function mimic() {
 				console.log("Ymax " + Ymax);
 				console.log(" Standard Torque v/s Actual Torque " + graphData1);
 				Highcharts.chart('canvas-div', {
+					exporting: { enabled: true },
+					credits: { enabled: false},
 					title: {
 						text: ' Graph of Standard Power & Weight '
 					},
