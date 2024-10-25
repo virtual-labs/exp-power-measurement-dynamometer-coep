@@ -718,6 +718,8 @@ function testing() {
 				console.log(" Standard Torque v/s Actual Torque " + graphData1);
 				
 				Highcharts.chart('canvas-div', {
+					exporting: { enabled: true },
+					credits: { enabled: false},
 					title: {
 						text: ' Graph of Standard Power & Weight '
 					},

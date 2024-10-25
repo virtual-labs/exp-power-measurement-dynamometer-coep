@@ -52,14 +52,20 @@ setInterval(blink_text, 1000);
 		
 </header>
 
-<div class="row">
-<div  class="col-sm-10"> 
-</div>
-<div  class="col-sm-2"> 
-     <button type="button" id = "prodcedure-btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Procedure
-</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ 	 	 <div class="row">
+	 <div  class="col-sm-6"></div>
+		<div  class="col-sm-2">
+		<button type="button" class="btn btn-danger" style="margin-top:7px"  id = "pdfDownload" hidden >Download Result </button>
+		 </div> 
+      <div  class="col-sm-2"> 
+      <button type="button" id="refer" class="btn btn-danger " style="margin-top:7px" data-toggle="modal" data-target="#exampleModal12" hidden>Configuration</button>
+     </div>
+     <div  class="col-sm-2"> 
+     <button type="button" id = "procedure-btn" class="btn btn-primary" style="margin-top:7px" data-toggle="modal" data-target="#exampleModal"> Procedure</button>
+     </div> 
+      </div>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -78,8 +84,26 @@ setInterval(blink_text, 1000);
     </div>
   </div>
 </div>
- </div>
- </div>	
+
+<div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title12" id="exampleModalLabel">Message Box</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body12" style="overflow-y: scroll;height:18vh">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+<!--         <button type="button" class="btn btn-primary">OK</button> -->
+      </div>
+    </div>
+  </div>
+</div>
 	
 <div  class="row container-fluid" id="main-div1">
 	<div class="col-lg-5" id="main-div">
@@ -119,15 +143,32 @@ Copyrights &copy; COEP - Virtual Lab
 </body>
 
 <!-- https://code.jquery.com/jquery-3.5.1.js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 <script type="text/javascript" src="lib/raphael.js"></script>
 <script type="text/javascript" src="lib/raphael.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="src/bootstrap.min.js"></script>
+
+
+
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
+  
+<!--   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+<!--   <script type="text/javascript" src="src/bootstrap.min.js"></script> -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script type="text/javascript" src="src/mainPage.js"></script>
@@ -146,36 +187,36 @@ proc += ''
 + '<h3> Procedure</h3>'
 
 + '<h3> Configuration</h3>'
-+ '<ol><li> Select motor size , diameter of drum and check/click the configuration button. (we are considering standard single phase motor sizes).'
++ '<ol><li> Select motor size , diameter of drum and check/click the configuration button. (we are considering standard single phase motor sizes)'
 + '<li>Click on next level </ol>'
 
 + '<h3> Basic Knowledge</h3> '
-+ '<ol><li> Answer all the questions and click on next level.</ol>'
++ '<ol><li> Answer all the questions and click on next level</ol>'
 
 + '<h3> Part A</h3>'
-+ '<ol><li> Start the cold water pump for cooling system.'
-+ '<li> Click on motor and start cold water supply. '
++ '<ol><li> Start the cold water pump for cooling system'
++ '<li> Click on motor and start cold water supply '
 + '<li> Click on Engine image and start loading the weight '
-+ '<li> Check the spring balance reading and click on Submit button beside meter reading.'
-+ '<li> Calculate the power and submit the answer to left side text box.'
-+ '<li> Repeat the process for 5-6 times with different loads and observe the table reading and change in power with weight.</ol>'
++ '<li> Check the spring balance reading and click on Submit button beside meter reading'
++ '<li> Calculate the power and submit the answer to left side text box'
++ '<li> Repeat the process for 5-6 times with different loads and observe the table reading and change in power with weight</ol>'
 
 
 
 
 + '<h3> Part B</h3>'
-+ '<ol><li> Start the cold water pump for cooling system.'
-+ '<li> Select the speed of the motor and weight.'
-+ '<li> Start the induction motor image with loading condition and check the power sensor reading.'
-+ '<li> Calculate the standard torque for loading condition and submit the answer. (torque sensor reset to zero and engine stops.)'
-+ '<li> Repeat the above process from point no. 3, increasing maximum loading weights with same speed.'
-+ '<li> Plot the graph by clicking on "show graph" button after 5-6 readings and observe the characterisation graph.'
-+ '(while changing the speed of motor, start loading the motor with minimum to maximum weight.) '
-+ '<li> Click on "Next level" button to go next level.</ol>'
++ '<ol><li> Start the cold water pump for cooling system'
++ '<li> Select the speed of the motor and weight'
++ '<li> Start the induction motor image with loading condition and check the power sensor reading'
++ '<li> Calculate the standard torque for loading condition and submit the answer. (torque sensor reset to zero and engine stops)'
++ '<li> Repeat the above process from point no. 3, increasing maximum loading weights with same speed'
++ '<li> Plot the graph by clicking on "show graph" button after 5-6 readings and observe the characterisation graph'
++ '(while changing the speed of motor, start loading the motor with minimum to maximum weight) '
++ '<li> Click on "Next level" button to go next level</ol>'
 
 + '<h3> Fault Finding</h3>'
-+ '<ol><li> Observe the shown table and select the fault accordingly.'
-+ '<li> After selecting the correct fault. All stages are completed. '
++ '<ol><li> Observe the shown table and select the fault accordingly'
++ '<li> After selecting the correct fault. All stages are completed '
 
 + '</ol>'
 

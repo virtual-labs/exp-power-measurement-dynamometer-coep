@@ -60,20 +60,22 @@ function tableCreateForFualtFinding1()
 					if(place<=i-1)
 						{
 							var errorshaft = masterJson.demo[i].torque_corr + 2;
+							
 							tableMainDiv += '<tr>'
 //							+ '   <td><center>' + masterJson.demo[i].RPM + '</center></td>'
 							+ '   <td style="background-color:#83e3998a;"><center>' + masterJson.demo[i].torque_corr+ '</center></td>'
-							+ '   <td style="background-color:#de767645;"><center>' + errorshaft.toFixed(2) + '</center></td>'
+							+ '   <td style="background-color:#de767645;"><center>' + errorshaft + '</center></td>'
 							+ '     </tr>'
 						
 						}
 					else
 						{
 						var errorshaft = masterJson.demo[i].torque_corr - 2;
+						
 						tableMainDiv += '<tr>'
 //							+ '   <td><center>' + masterJson.demo[i].RPM + '</center></td>'
 							+ '   <td style="background-color:#83e3998a;"><center >' + masterJson.demo[i].torque_corr + '</center></td>'
-							+ '   <td style="background-color:#de767645;"><center >' + errorshaft.toFixed(2) + '</center></td>'
+							+ '   <td style="background-color:#de767645;"><center >' + errorshaft + '</center></td>'
 							+ '     </tr>'
 						}
 					

@@ -186,3 +186,16 @@ var htm='<div class="row" >'
 	   });
 	   
 	}
+	
+	 $("#refer").click(function() { 
+
+	var refer = '';
+	refer += ''
+	+ '<h3> Configuration</h3>'
+	+ '<ol><li> Selected  motor size is '+motorSize+''
+	+ '<li> Selected Arm Length is '+lengthType+'  </ol>'
+	
+	$(".modal-body12").html('');
+	$(".modal-body12").html(refer);
+	
+	});
