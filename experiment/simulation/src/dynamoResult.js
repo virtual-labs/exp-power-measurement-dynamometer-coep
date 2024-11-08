@@ -29,6 +29,7 @@ function result(){
 
 $("#procedure-btn").prop("hidden",true);
 $("#refer").prop("hidden",true);
+$("#simDemo").prop("hidden",true);
 	
 //Basic knowledge	 
 if("corrAns" in data)
@@ -122,7 +123,7 @@ var htm = ''
 
 	+ '<div class="col-md-12">'
 	+ ' <div class="panel remarkBground" >'
-	+ ' <div class="panel-body remark" ><center> <br> <b> Dynamometer Experiment is  Completed Sucessfully !! </b>'
+	+ ' <div class="panel-body remark" style = "font-size:20px;"><center> <br> <b> Dynamometer Experiment is  Completed Sucessfully !! </b>'
 	+ '<br> <b> </b></center></div>'
 	+ '</div>'
 	+ '</div>'
