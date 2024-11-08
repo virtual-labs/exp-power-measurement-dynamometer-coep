@@ -34,7 +34,7 @@ font-family: Cambria, Georgia, serif;
     margin: 15px 0;
 }
 
-#testSubmit
+#testSubmit,#mimicSubmit
 {
 	padding: 10px;
 	color: #fff;
